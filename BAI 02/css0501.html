@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang web của tôi</title>
+	<style>
+		body{
+           color: #1b1818;
+           font-size: 18px  ;
+			/* Kiểu cho phần thân của trang web */
+		}
+
+		.container{
+            background-color: rgb(224, 179, 196);
+            margin-top: -19px;
+            margin-bottom: -19px;
+			/* Kiểu cho khối .container */
+		}
+
+		ul{
+			color:rgb(79, 79, 158)
+            
+            /* Kiểu cho danh sách chưa sắp xếp */
+		}
+
+		header{
+            background-color: rgb(93, 177, 149) ;
+			/* Kiểu cho phần header của trang web */
+		}
+
+		header a{
+            color :rgb(84, 75, 95)
+			/* Kiểu cho các liên kết trong phần header */
+		}
+
+		header li{
+            background-color: rgb(235, 142, 142);
+            display: inline-block;           
+            padding: 8px 80px;          
+			/* Kiểu cho các mục danh sách trong phần header */
+		}
+        header li + li{
+                        border-left: 1px solid #000;       
+        }
+		header #branding{
+            background-color: antiquewhite;
+			/* Kiểu cho phần header có id="branding" */
+		}
+
+
+		header #branding h1{
+            background-color: rgb(95, 197, 245);
+			/* Kiểu cho tiêu đề h1 trong phần header */
+		}
+
+		header nav{
+            background-color: antiquewhite;
+			/* Kiểu cho phần danh sách liên kết chính trong phần header */
+		}
+
+		header .highlight, header .current a{
+            background-color: rgb(174, 134, 226);
+			/* Kiểu cho các mục trong phần danh sách chính có class "highlight" hoặc các liên kết đang được truy cập */
+		}
+
+		header a:hover{
+            background-color: rgb(177, 219, 97);
+			/* Kiểu cho các liên kết trong phần header khi rê chuột vào */
+		}
+
+		footer{
+            background-color: rgb(47, 212, 144);
+            margin-bottom: -24px;
+			/* Kiểu cho phần chân trang của trang web */
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1>Tên của trang bạn</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="#">Trang chủ</a></li>
+					<li><a href="#">Giới thiệu</a></li>
+					<li><a href="#">Dịch vụ</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="main">
+		<div class="container">
+			<article>
+				<h1>Tiêu đề của bài viết</h1>
+				<p>Nội dung của bài viết được viết ở đây.</p>
+				<p>Nội dung của bài viết được viết ở đây.</p>
+				<p>Nội dung của bài viết được viết ở đây.</p>
+			</article>
+
+			<aside>
+				<h2>Tiêu đề của sidebar</h2>
+				<p>Nội dung của sidebar được viết ở đây.</p>
+				<p>Nội dung của sidebar được viết ở đây.</p>
+			</aside>
+		</div>
+	</section>
+
+	<footer>
+		<p>Bản quyền &copy; 2023 - Tên của trang bạn</p>
+	</footer>
+</body>
+</html>
