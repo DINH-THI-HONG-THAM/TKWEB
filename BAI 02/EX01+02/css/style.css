@@ -1,0 +1,28 @@
+<style>
+h1{
+    margin: center 50px;
+    color: rgb(55, 39, 199);
+}
+h2{
+    margin-left: 30px;
+    color:rgb(72, 66, 126);		
+}
+h3{
+    color:rgb(98, 94, 129);
+}
+h4{
+    color:lightskyblue;
+}
+p{
+    color:dimgrey
+}
+header{
+    background-color: darkcyan;
+}
+section{
+    background-color: cornsilk;
+}
+footer{
+    background-color: pink;
+}
+</style>
