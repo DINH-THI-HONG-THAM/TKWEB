@@ -1,189 +1,204 @@
-padding:0px; 
-  margin: 0px;
-  font-family:Comic Sans MS;
-  color: rgb(19, 16, 16);
+/* CSS cho toàn bộ trang web */
+body{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
-/* Global */
 .container{
-  margin: 50px;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
 
 ul{
   list-style: none;
-
+  margin: 0;
+  padding: 0;
 }
 
 .button_1{
-  height: 28px;
-  background-color: rgb(64, 128, 212);
-
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .dark{
-  background-color: rgb(191, 202, 182);
-    padding: 30px;
-
+  color: #fff;
+  background-color: #333;
 }
 
-/* Header **/
+/* CSS cho header */
 header{
-    width: 100%;
-    background-color: rgb(196, 255, 240);
-    display: inline-block;
-    border-bottom: 3px solid  rgb(202, 152, 202);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 
 header a{
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: rgb(3, 22, 19);
-
+  color: #333;
 }
 
 header li{
   display: inline-block;
-    margin: 0 10px;
+  margin-left: 20px;
 }
 
 header #branding{
-  margin-left: 50px;
+  display: flex;
+  align-items: center;
 }
 
 header #branding h1{
-  display: inline-block;
-  line-height: 50px;
-  color: rgb(3, 22, 19);
-
+  font-size: 30px;
+  margin: 0;
 }
 
 header nav{
-  float: right;
-  margin-top: -70px;
-  margin-right: 50px;
-
+  display: flex;
 }
 
 header .highlight, header .current a{
-  color: blue;
-
+  color: #2196f3;
 }
 
 header a:hover{
-  background-color: greenyellow;
-  color: hotpink;
+  color: #2196f3;
 }
 
-/* Showcase */
+/* CSS cho showcase */
 #showcase{
-  background-image: url(../img/showcase.jpg);
-
+  background-image: url("path-to-image.jpg");
   background-position: center;
-  padding: 10px;
-
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 #showcase h1{
-  font-size: 50px;
-    text-align:center;
-    font-style:oblique;
-    
-    color:rgb(7, 124, 7);
-
+  font-size: 60px;
+  margin: 0;
 }
 
 #showcase p{
-  font-style:oblique;
-  font-size: 30px;
-  text-align:center;
-  color: yellowgreen;
-
+  font-size: 24px;
 }
 
-/* Newsletter */
+/* CSS cho newsletter */
 #newsletter{
-  background-color: rgb(196, 255, 240);
-
-  padding-top: 10px;
-
+  background-color: #2196f3;
+  color: #fff;
+  padding: 50px;
 }
 
 #newsletter h1{
-  font-family:Comic Sans MS;
-  margin-top:-30px;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
 }
 
-#newsletter form {
-  float: right;
-  margin-top: -50px;
-  margin-right: 150px;
-
+#newsletter form{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #newsletter input[type="email"]{
-  border: 2px solid  rgb(79, 149, 214);
-  height: 24px;
-  width: 300px;
-
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
 }
 
-/* Boxes */
-#boxes{
-  text-align: center;
-  
+#newsletter button[type="submit"]{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #2196f3;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
 
+/* CSS cho boxes */
+#boxes{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #boxes .box{
-  display: inline-block;
-    width: 20%;
-    margin: 0 60px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 #boxes .box img{
-  width: 80px;    
-  
+  width: 100%;
 }
 
-/* Sidebar */
+/* CSS cho sidebar */
 aside#sidebar{
-  float: right;
-  width: 400px;
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
   width: 100%;
-  
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-/* Main-col */
+/* CSS cho main-col */
 article#main-col{
-  display: inline-block;
-  width: 600px;
+  flex-grow: 1;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 
-/* Services */
+/* CSS cho services */
 ul#services li{
-  background-color:rgb(97, 97, 87);
-  color: rgb(105, 196, 63);
-  margin: 3px 0px;
-  border: 2px solid  rgb(7, 5, 7);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ul#services li i{
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 footer{
-  background-color: rgb(79, 155, 218);
-  text-align: center;/* padding-left: 500px; */
-  height: 80px;
-  line-height: 80px;
-  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Media Queries */
+/* CSS cho responsive */
 @media(max-width: 768px){
+
   header #branding,
   header nav,
   header nav li,
@@ -192,12 +207,12 @@ footer{
   #boxes .box,
   article#main-col,
   aside#sidebar{
-    margin: 0;
-    padding: 0;
-    text-align: center;
     width: 100%;
-    float: none;
+    text-align: center;
   }
+
   header{
-    padding-top: 8px;
+    flex-direction: column;
   }
+
+}
